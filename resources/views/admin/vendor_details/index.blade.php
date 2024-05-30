@@ -34,20 +34,25 @@
                     <th style="text-align:center;"><input type="checkbox" id="select-all" /></th>@endif
                     @endcan
                     <th>Vendor Code</th>
-                    <th>Name(MD)</th>
-                    <th>Email(MD)</th>
-                    <th>Phone(MD)</th>
-                    <th>Connect(MD)</th>
+                    <th>Name(MD/CEO/President)</th>
+                    <th>Email(MD/CEO/President)</th>
+                    <th>Phone(MD/CEO/President)</th>
+                    <th>LinedIn Connect(MD/CEO/President)</th>
 
-                    <th>Name(Principle)</th>
+                    <th>Name(Principle )</th>
                     <th>Email(Principle)</th>
                     <th>Phone(Principle)</th>
-                    <th>Connect(Principle)</th>
+                    <th>LinedIn Connect(Principle)</th>
 
                     <th>Name(Finance)</th>
                     <th>Email(Finance)</th>
                     <th>Phone(Finance)</th>
-                    <th>Connect(Finance)</th>
+                    <th>LinedIn Connect(Finance)</th>
+
+                    <th>Name(Head Purchase)</th>
+                    <th>Email(Head Purchase)</th>
+                    <th>Phone(Head Purchase)</th>
+                    <th>LinedIn Connect(Head Purchase)</th>
 
                     <th>Action</th>
                 </tr>
@@ -73,6 +78,12 @@
                     <td>{{$list->finance_email}}</td>
                     <td>{{$list->finance_phone}}</td>
                     <td>{{$list->finance_connect}}</td>
+
+                    <td>{{$list->head_name}}</td>
+                    <td>{{$list->head_email}}</td>
+                    <td>{{$list->head_phone}}</td>
+                    <td>{{$list->head_connect}}</td>
+
                     <td>
                         @can('vendor__delete')
                         {!! Form::open(array(

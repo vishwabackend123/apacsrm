@@ -37,6 +37,11 @@ class StoreVendorDetailssRequest extends FormRequest
             'finance_email' => 'required',
             'finance_phone' => 'required',
             'finance_connect' => 'required',
+
+            'head_name' => 'required',
+            'head_email' => 'required',
+            'head_phone' => 'required',
+            'head_connect' => 'required',
         ];
     }
 }

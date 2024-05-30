@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
-    <h3 class="page-title">@lang('quickadmin.vendor.title')</h3>
-    {!! Form::open(['method' => 'POST', 'route' => ['admin.vendors.import_csv'],'files' => true]) !!}
+    <h3 class="page-title">Vendor Details</h3>
+    {!! Form::open(['method' => 'POST', 'route' => ['admin.vendor-details.import_csv'],'files' => true]) !!}
 
     <div class="panel panel-default">
         <div class="panel-heading">
-            Vendor CSV Import
+            Vendor Details CSV Import
         </div>
         <div class="panel-body">
             <div class="row">

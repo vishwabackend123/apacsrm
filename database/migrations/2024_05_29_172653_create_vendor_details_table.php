@@ -31,6 +31,11 @@ return new class extends Migration
             $table->string('finance_phone');
             $table->string('finance_connect');
 
+            $table->string('head_name');
+            $table->string('head_email');
+            $table->string('head_phone');
+            $table->string('head_connect');
+
             $table->timestamps();
         });
     }

@@ -212,14 +212,7 @@ class VendorController extends Controller
     }
     public function import_csv(NRequest $request)
     {
-        try {
-
-        }
-
-        //catch exception
-        catch(Exception $e) {
-             return back()->withErrors($e->getMessage())->withInput();
-        }
+        
          $validator = Validator::make($request->all(), [
             'vendor_file' => 'required|file|mimes:csv,txt|max:2048',
         ]);

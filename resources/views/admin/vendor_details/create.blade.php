@@ -59,7 +59,7 @@
             </div>
             <div class="row">
                 <div class="col-xs-12 form-group">
-                    {!! Form::label('md_connect', "Connect(MD) *", ['class' => 'control-label']) !!}
+                    {!! Form::label('md_connect', "LinedIn Connect(MD) *", ['class' => 'control-label']) !!}
                     {!! Form::text('md_connect', old('md_connect'), ['class' => 'form-control', 'placeholder' => '', 'required' => '', 'id' => 'md_connect']) !!}
                     <p class="help-block" id="vendor_country_error"></p>
                     @if($errors->has('md_connect'))
@@ -107,7 +107,7 @@
             </div>
             <div class="row">
                 <div class="col-xs-12 form-group">
-                    {!! Form::label('principle_connect', "Connect(Principle) *", ['class' => 'control-label']) !!}
+                    {!! Form::label('principle_connect', "LinedIn Connect(Principle) *", ['class' => 'control-label']) !!}
                     {!! Form::text('principle_connect', old('principle_connect'), ['class' => 'form-control', 'placeholder' => '', 'required' => '', 'id' => 'principle_connect']) !!}
                     <p class="help-block" id="vendor_city_error"></p>
                     @if($errors->has('principle_connect'))
@@ -155,12 +155,61 @@
             </div>
             <div class="row">
                 <div class="col-xs-12 form-group">
-                    {!! Form::label('finance_connect', "Connect(Finance) *", ['class' => 'control-label']) !!}
+                    {!! Form::label('finance_connect', "LinedIn Connect(Finance) *", ['class' => 'control-label']) !!}
                     {!! Form::text('finance_connect', old('finance_connect'), ['class' => 'form-control', 'placeholder' => '', 'required' => '', 'id' => 'finance_connect']) !!}
                     <p class="help-block" id="vendor_city_error"></p>
                     @if($errors->has('finance_connect'))
                         <p class="help-block">
                             {{ $errors->first('finance_connect') }}
+                        </p>
+                    @endif
+                </div>
+            </div>
+
+             <div class="row">
+                <div class="col-xs-12 form-group">
+                    {!! Form::label('head_name', "Name(Head Purchase) *", ['class' => 'control-label']) !!}
+                    {!! Form::text('head_name', old('head_name'), ['class' => 'form-control', 'placeholder' => '', 'required' => '', 'id' => 'head_name']) !!}
+                    <p class="help-block" id="vendor_city_error"></p>
+                    @if($errors->has('head_name'))
+                        <p class="help-block">
+                            {{ $errors->first('head_name') }}
+                        </p>
+                    @endif
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 form-group">
+                    {!! Form::label('head_email', "Email(Head Purchase) *", ['class' => 'control-label']) !!}
+                    {!! Form::text('head_email', old('head_email'), ['class' => 'form-control', 'placeholder' => '', 'required' => '', 'id' => 'head_email']) !!}
+                    <p class="help-block" id="vendor_city_error"></p>
+                    @if($errors->has('head_email'))
+                        <p class="help-block">
+                            {{ $errors->first('head_email') }}
+                        </p>
+                    @endif
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 form-group">
+                    {!! Form::label('head_phone', "Phone(Head Purchase) *", ['class' => 'control-label']) !!}
+                    {!! Form::text('head_phone', old('head_phone'), ['class' => 'form-control', 'placeholder' => '', 'required' => '', 'id' => 'head_phone']) !!}
+                    <p class="help-block" id="vendor_city_error"></p>
+                    @if($errors->has('head_phone'))
+                        <p class="help-block">
+                            {{ $errors->first('head_phone') }}
+                        </p>
+                    @endif
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 form-group">
+                    {!! Form::label('head_connect', "LinedIn Connect(Head Purchase) *", ['class' => 'control-label']) !!}
+                    {!! Form::text('head_connect', old('head_connect'), ['class' => 'form-control', 'placeholder' => '', 'required' => '', 'id' => 'head_connect']) !!}
+                    <p class="help-block" id="vendor_city_error"></p>
+                    @if($errors->has('head_connect'))
+                        <p class="help-block">
+                            {{ $errors->first('head_connect') }}
                         </p>
                     @endif
                 </div>

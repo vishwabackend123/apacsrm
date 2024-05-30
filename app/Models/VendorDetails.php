@@ -17,9 +17,14 @@ class VendorDetails extends Model
             'principle_email',
             'principle_phone',
             'principle_connect',
-
             'finance_name',
             'finance_email',
             'finance_phone',
-            'finance_connect'];
+            'finance_connect',
+            'head_name',
+            'head_email',
+            'head_phone',
+            'head_connect'
+        ];
 }
+
